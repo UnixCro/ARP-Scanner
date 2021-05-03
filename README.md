@@ -1,3 +1,3 @@
 # Arp-Scanner
 
-Einfaches Anwendungspaket für die Ermittlung der Internet/ Lokalen IP Adresse für einen  Mac Computer
+Einfaches Anwendungspaket für die Ermittlung der Internet/ Lokalen IP Adresse von einem Mac Computer
