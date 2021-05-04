@@ -1,6 +1,10 @@
 #Ermittlung der Internet\ lokalen IP Adresse
 
-set A to do shell script "curl ifconfig.me"
-set B to do shell script "ipconfig getifaddr en1"
+set C to do shell script "curl ifconfig.me"
+set D to do shell script "ipconfig getifaddr en1"
+set y to do shell script "ifconfig en1 ether |grep 'ether'"
+set x to items 8 through 24 of y
+set A to x as string
 
-display dialog "Ihre Internet IP Adresse ist en1" & " " & A & " " & "& Ihre lokale IP Adresse ist en1" & " " & B with title "ARP Scanner Cro" buttons {"OK"} default button 1
+get A
+display dialog "Ihre Internet IP Adresse ist en1" & " " & C & " " & "Ihre lokale IP Adresse ist en1" & " " & D & " & Ihre Hardwareadresse en1=  " & A with title "ARP Scanner Cro" buttons {"OK"} default button 1
